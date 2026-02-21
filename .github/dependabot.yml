@@ -1,0 +1,27 @@
+version: 2
+   updates:
+     - package-ecosystem: "pip"
+       directory: "/"
+       schedule:
+         interval: "weekly"
+       commit-message:
+         prefix: "deps"
+```
+4. Click **"Commit new file"**
+
+---
+
+## Step 6: Verify Everything Looks Right
+
+Your repo should now have these 3 files:
+- `README.md` — contains your email
+- `requirements.txt` — has fastapi, requests, pandas
+- `.github/dependabot.yml` — has the config above
+
+---
+
+## Step 7: Copy Your Repository URL
+
+Your URL will be in the format:
+```
+https://github.com/YOUR_USERNAME/dependabot-demo
